@@ -5,13 +5,11 @@ import { useMainMenu } from '@/composable/useMainMenu'
 const { toggleMenu } = useMainMenu();
 </script>
 <template>
-  <k-page>
-    <k-navbar centerTitle title="Centaxis" fontSizeMaterial="text-[18px]">
-      <template #left>
-        <k-link navbar iconOnly @click="() => toggleMenu()">
-          <menu-icon />
-        </k-link>
-      </template>
-    </k-navbar>
-  </k-page>
+  <k-navbar centerTitle title="Centaxis" fontSizeMaterial="text-[18px]">
+    <template #left>
+      <k-link navbar iconOnly @click="() => toggleMenu()">
+        <menu-icon />
+      </k-link>
+    </template>
+  </k-navbar>
 </template>

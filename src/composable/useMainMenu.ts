@@ -13,7 +13,7 @@ export const useMainMenu = () => {
   const setSelected = (selected: string, closeMenu = true) => {
     selectedRef.value = selected;
     closeMenu && (menuOpenRef.value = false);
-    router.replace(`/${selected}`);
+    router.replace({name:selected});
   };
   return {
     // props
