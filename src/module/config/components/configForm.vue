@@ -2,15 +2,17 @@
 <script setup lang="ts">
 import { kBlockTitle,kList,kListInput} from 'konsta/vue'
 import kmIcon  from '@/common/icons/kmIcon.vue'
+import faceIcon  from '@/common/icons/faceIcon.vue'
 </script>
 <template>
-  <k-block-title>Configuración</k-block-title>
-  <k-list inset-ios strong-ios>
+  <k-block-title medium colors.textMaterial="text-red-600">Configuración</k-block-title>
+  <k-list strong inset>
     <k-list-input
       outline
       label="Precio x kilometros"
-      floating-label
       type="number"
+      min="0"
+      step="0.5"
       placeholder="Precio x kilometros"
     >
       <template #media>
@@ -20,49 +22,12 @@ import kmIcon  from '@/common/icons/kmIcon.vue'
 
     <k-list-input
       outline
-      label="Password"
-      floating-label
-      type="password"
-      placeholder="Your password"
+      label="Nombre"
+      type="text"
+      placeholder="Nombre"
     >
       <template #media>
-        <demo-icon />
-      </template>
-    </k-list-input>
-
-    <k-list-input
-      outline
-      label="E-mail"
-      floating-label
-      type="email"
-      placeholder="Your e-mail"
-    >
-      <template #media>
-        <demo-icon />
-      </template>
-    </k-list-input>
-
-    <k-list-input
-      outline
-      label="URL"
-      floating-label
-      type="url"
-      placeholder="URL"
-    >
-      <template #media>
-        <demo-icon />
-      </template>
-    </k-list-input>
-
-    <k-list-input
-      outline
-      label="Phone"
-      floating-label
-      type="tel"
-      placeholder="Your phone number"
-    >
-      <template #media>
-        <kmIcons />
+        <face-icon />
       </template>
     </k-list-input>
   </k-list>

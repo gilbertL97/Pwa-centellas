@@ -1,9 +1,9 @@
 <script setup lang="ts">
+import { kPage } from 'konsta/vue';
 
 </script>
 <template>
-  <div class="bg-taxi-img  bg-bottom bg-no-repeat h-screen bg-fixed mt-16"></div>
-</template>
+  <k-page class="bg-taxi-img  bg-bottom bg-no-repeat min-h-screen overflow-hidden" /></template>
 
 
 

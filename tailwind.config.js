@@ -11,7 +11,7 @@ export default konstaConfig({
     extend: {
       backgroundImage: {
         // eslint-disable-next-line no-undef
-        'taxi-img':  `url(${path.resolve(__dirname, 'src/assets/backgrounds/carBack.jpg')})`,
+        'taxi-img':  `url(${path.resolve(__dirname, 'src/assets/backgrounds/carBack.png')})`,
       }
     },
   },
