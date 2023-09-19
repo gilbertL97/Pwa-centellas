@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import NavbarMain from '@/layouts/navbar/navbarMain.vue'
-import {kApp} from 'konsta/vue'
+import { kApp } from 'konsta/vue'
 import menuMain from './layouts/menu/menuMain.vue';
 import { RouterView } from 'vue-router';
 </script>
 
 <template>
-
   <k-app theme="material">
     <navbar-main />
     <menu-main />
-     
     <router-view />
   </k-app>
 </template>

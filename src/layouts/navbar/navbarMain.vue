@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { kPage, kNavbar, kLink } from 'konsta/vue'
+import {  kNavbar, kLink } from 'konsta/vue'
 import menuIcon from '@/common/icons/menuIcon.vue'
 import { useMainMenu } from '@/composable/useMainMenu'
 const { toggleMenu } = useMainMenu();
